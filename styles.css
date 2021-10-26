@@ -1,0 +1,148 @@
+:root{
+    --white-color : #ffffff;
+    --sky-blue : #87CEEB;
+    --deep-blue : #4682B4;
+    --lime: #7CFC00;
+}
+
+body {
+    background-color: #E6E6FA;
+    margin-top: 7%;
+    
+}
+
+.modal {
+    background-color:#F8F8FF;
+  ;
+     margin-left: 20%;
+    margin-right: 10%;
+     
+    padding-bottom: 15%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  width: 60%; 
+
+ 
+
+}
+
+.first-heading {
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.first-heading h3 {
+    color: var(--deep-blue);
+    font-size: 30px;
+   
+}
+
+.first-heading h4{
+   color: var(--lime);
+}
+
+.first-heading p {
+color: #778899;
+}
+
+.second-heading {
+   position: relative;
+    float: right;
+    display:flex;
+     justify-content: center;
+     align-items: center;
+    margin-top: 70px; 
+    /* margin-bottom: 50px;  */
+    padding-bottom: 20%;
+}
+
+.pricing {
+background-color:var(--deep-blue);
+width: 75%;
+text-align: center;
+border-bottom-left-radius: 10px;
+padding: 2.5px 0;
+
+
+/* margin-top: 20px; 
+padding-top: 30px;
+margin-right: 20%;
+align-self: center; */
+}
+
+.sub {
+ color: var(--white-color);
+    font-size: 25px; 
+    white-space: nowrap;
+
+}
+
+.price {
+    color:#D3D3D3;
+}
+
+.price span{
+    color: white; 
+    font-size: 35px;
+}
+
+.access {
+    color: var(--white-color)
+}
+
+
+button {
+    width: 40%;
+    background-color:var(--lime);
+    padding: 14px 28px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 10px 10px 17px -9px rgba(0,0,0,0.75);
+    margin-bottom: 30px;
+}
+
+button span {
+    color: var(--white-color);
+}
+
+.about {
+    
+   
+    background-color: var(--sky-blue);
+    padding: 48px;
+    width:60%;
+    border-bottom-right-radius: 10px;
+    
+    
+}
+
+
+.why {
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.word {
+   
+    color: whitesmoke;
+}
+
+@media (max-width:800px) {
+   .second-heading {
+       position: relative;
+       flex-direction: column;
+   }
+
+   .pricing {
+       width: 100%;
+       border: none;
+   }
+
+   .about {
+       border: none;
+       width: 65%;
+   }
+}
