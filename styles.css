@@ -126,12 +126,23 @@ button span {
 
  @media (max-width:700px) { 
 
+    .modal {
+        /* padding-bottom: 30px; */
+        box-shadow: -1px 2px 14px 0px rgba(0,0,0,0.75);
+        margin-bottom: 10%;
+    }
+
+
     .second-heading {
         flex-direction: column;
     }
 
     .pricing , .about{
         width: 100%;
+    }
+
+    .about {
+        padding-bottom: 20px;
     }
 
     .why {
@@ -152,7 +163,8 @@ button span {
 } 
 
 .about  {
-    border-bottom-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .pricing {
@@ -166,5 +178,6 @@ button span {
      .modal {
          width: 100%;
          margin: auto;
+         margin-bottom: 10%;
      }
  }
