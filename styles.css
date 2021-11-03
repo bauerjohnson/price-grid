@@ -13,11 +13,11 @@ body {
 
 .modal {
     background-color:#F8F8FF;
-  ;
+  
      margin-left: 20%;
     margin-right: 10%;
      
-    padding-bottom: 15%;
+    /* padding-bottom: 15%; */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 14px;
   width: 60%; 
@@ -47,35 +47,35 @@ body {
 color: #778899;
 }
 
+
+
+
 .second-heading {
-   position: relative;
-    float: right;
-    display:flex;
-     justify-content: center;
-     align-items: center;
-    margin-top: 70px; 
-    /* margin-bottom: 50px;  */
-    padding-bottom: 20%;
+   display: flex; 
+   margin-top: 5%;
+  
+  
 }
 
 .pricing {
-background-color:var(--deep-blue);
-width: 75%;
-text-align: center;
-border-bottom-left-radius: 10px;
-padding: 2.5px 0;
+    background-color: var(--sky-blue);
+    width: 50%;
+    border-bottom-left-radius: 10px;
+    text-align: center;
 
-
-/* margin-top: 20px; 
-padding-top: 30px;
-margin-right: 20%;
-align-self: center; */
 }
 
-.sub {
+.about {
+    background-color: red;
+    width: 50%;
+    border-bottom-right-radius: 10px;
+}
+
+
+ .sub {
  color: var(--white-color);
     font-size: 25px; 
-    white-space: nowrap;
+    /* white-space: nowrap; */
 
 }
 
@@ -90,7 +90,7 @@ align-self: center; */
 
 .access {
     color: var(--white-color)
-}
+}  
 
 
 button {
@@ -108,41 +108,54 @@ button span {
     color: var(--white-color);
 }
 
-.about {
-    
-   
-    background-color: var(--sky-blue);
-    padding: 48px;
-    width:60%;
-    border-bottom-right-radius: 10px;
-    
-    
-}
-
 
 .why {
+    font-weight: bold;
     font-size: 20px;
     color: whitesmoke;
-}
+    padding-left: 130px;
+
+} 
 
 .word {
-   
-    color: whitesmoke;
+     width: 50%;
+    color: #D3D3D3;
+    padding-left: 100px;
+    
+} 
+
+ @media (max-width:700px) { 
+
+    .second-heading {
+        flex-direction: column;
+    }
+
+    .pricing , .about{
+        width: 100%;
+    }
+
+    .why {
+        font-weight: bold;
+        font-size: 20px;
+        color: whitesmoke;
+        padding: 0;
+        text-align: center;
+        
+    
+    } 
+    
+    .word {
+         width: 50%;
+        color: #D3D3D3;
+        padding-left: 0;
+         margin: auto;
+} 
+
+.about  {
+    border-bottom-right-radius: 0;
 }
 
-@media (max-width:800px) {
-   .second-heading {
-       position: relative;
-       flex-direction: column;
-   }
-
-   .pricing {
-       width: 100%;
-       border: none;
-   }
-
-   .about {
-       border: none;
-       width: 65%;
-   }
+.pricing {
+    border-bottom-left-radius: 0;
 }
+ }
